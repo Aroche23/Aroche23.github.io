@@ -1,0 +1,196 @@
+/* Estilo general */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Contenedor principal */
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Menú lateral */
+.sidebar {
+    background: #333;
+    color: #fff;
+    width: 250px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    background: #f4f4f4;
+    overflow-y: auto;
+}
+
+.main-content h1 {
+    margin-top: 0;
+}
+
+#dynamic-content {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.map-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map-link {
+    margin-top: 10px;
+}
+
+.map-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.map-container {
+text-align: center;
+margin-top: 20px;
+}
+
+.map-link {
+margin-top: 10px;
+}
+
+.map-button {
+display: inline-block;
+padding: 10px 20px;
+background-color: blue;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+transition: background-color 0.3s;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    display: flex;
+}
+
+.map-container {
+    flex: 1;
+}
+
+/* Estilo de la ventana emergente */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 2rem;
+    width: 400px;
+    margin: 5% auto; /* Ajuste de margin-top para mover la ventana hacia arriba */
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.popup-content h2 {
+    text-align: center;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #555;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}

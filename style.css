@@ -1,0 +1,229 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo neutro */
+    color: #333;
+}
+
+header {
+    background: #333; /* Color original */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header nav ul li a,
+header nav ul li button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover,
+header nav ul li button:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    padding: 3rem 1rem;
+    background: #2E7D32; /* Verde original */
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #FFEB3B; /* Amarillo original */
+    color: #333;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background: #FBC02D; /* Amarillo más oscuro */
+}
+
+/* Beneficios */
+.benefit-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.benefit-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Comentarios */
+#comentarios {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#comentarios h2 {
+    color: #333; /* Tono original */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#comentarios-form label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+#comentarios-form input,
+#comentarios-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#comentarios-form button {
+    background: #333; /* Original */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comentarios-form button:hover {
+    background: #555; /* Más claro */
+}
+
+#comentarios-lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+#comentarios-lista ul li {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Ventanas Emergentes */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 2rem;
+    width: 400px;
+    margin: 10% auto;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+    text-align: center;
+    color: #333; /* Original */
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #333; /* Original */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #555; /* Más claro */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #999;
+}
